@@ -72,4 +72,3 @@ This project conducts a comprehensive financial analysis of five key companies i
 
 ## 9. Submission Links
 - GitHub Repository: https://github.com/ruohanma/AI-Computing-Power-Chain-Stock-Performance-Analysis-2020-2026/tree/main
-- Demo Video: [Your Video Link]   
