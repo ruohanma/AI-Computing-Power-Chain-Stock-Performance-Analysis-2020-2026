@@ -49,15 +49,32 @@ This project conducts a comprehensive financial analysis of five key companies i
 - A clear positive risk‑return relationship exists across the sector.
 
 ## 6. How to Run
-### Option A: Using WRDS (requires WRDS account)
-1. Install dependencies:
-   pip install pandas numpy matplotlib seaborn wrds
-2. Set USE_LOCAL_CSV = False.
-3. Run the Python script directly.
-4. All charts and metrics will display automatically.
-### Option B: Using pre‑saved CSV files (no WRDS needed)
-1.In the notebook, set USE_LOCAL_CSV = True.
-2.Run all cells – the notebook will read from the local CSV files.
+### Prerequisites
+- Python 3.8 or higher installed on your machine
+- Git (to clone the repository) or you can download the ZIP file
+### Step 1: Clone or download the repository
+    '''bash
+    git clone https://github.com/ruohanma/AI-Computing-Power-Chain-Stock-Performance-Analysis-2020-2026.git
+    cd AI-Computing-Power-Chain-Stock-Performance-Analysis-2020-2026
+### Step 2: Install dependencies
+- Install all required packages using the provided requirements.txt file (recommended):
+  
+    pip install -r requirements.txt
+### Step 3: Choose your data source
+#### Option A: Using WRDS (requires live data & WRDS account)
+1. Open the Jupyter notebook: AI Computing Power Chain Stock Performance Analysis 2020-2026.ipynb
+2. In the first configuration cell, set USE_LOCAL_CSV = False
+3. Run all cells: Cell → Run All from the Jupyter menu
+4. The notebook will:
+- Connect to WRDS
+- Download daily price and return data for the five tickers (NVDA, MSFT, GOOGL, TSM, AVGO) from 2020-01-01 to 2026-04-20
+- Compute risk-return metrics
+- Display 11 charts and console outputs
+#### Option B: Using pre-saved CSV files (no WRDS required)
+1. Open the Jupyter notebook: AI Computing Power Chain Stock Performance Analysis 2020-2026.ipynb
+2. In the first configuration cell, set USE_LOCAL_CSV = True
+3. Run all cells: Cell → Run All from the Jupyter menu
+4. The notebook will read the CSV files from the data/ folder and display all outputs immediately
 
 ## 7. Limitations
 - Only price and return data are used; fundamental indicators are not included.
